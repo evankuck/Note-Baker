@@ -1,3 +1,6 @@
+// declare the port
+const port = 3000;
+const PORT = process.env.PORT || 3001;
 // import express
 const express = require("express");
 // start the express server
@@ -5,8 +8,7 @@ const app = express();
 const fs = require("fs");
 const path = require("path");
 const router = express.Router();
-// declare the port
-const port = 3000;
+
 
 // apply middleware before we turn on the server
 app.use(express.json());
