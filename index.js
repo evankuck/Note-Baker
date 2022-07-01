@@ -1,6 +1,5 @@
 // declare the port
-const port = 3000;
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 // import express
 const express = require("express");
 // start the express server
@@ -88,6 +87,6 @@ app.get("*", (req, res) => {
 });
 
 // turn on the server
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
